@@ -37,21 +37,22 @@ public class HomeWork1_2 {
         int eggsWeight=70;
         int eggsNumber=4;
         int sportBreakfastGram=bananasNumber*bananasWeight+milkWeight+iceCreamNumber*iceCreamWeight+eggsNumber*eggsWeight;
-        float sportBreakfastKg=sportBreakfastGram/1000f;
+        float translateKgGramm=1000f;
+        float sportBreakfastKg=sportBreakfastGram/translateKgGramm;
         System.out.println("Обший вес спорт-завтрака равен "+sportBreakfastGram+ " грамм");
         System.out.println("Обший вес спорт-завтрака равен "+sportBreakfastKg+ " кг");
 
         System.out.println("Четвертое задание");
         int firstGoal=250;
         int secondGoal=500;
-        int middleGoal=(firstGoal+secondGoal)/2;
-        float need=7000;
-        float firstDays=need/firstGoal;
-        float secondDays=need/secondGoal;
-        float middleDays=need/middleGoal;
-        System.out.println("Если спортсмен будет терять по "+firstGoal+" грамм в день, то уйдет "+firstDays+" дней!");
-        System.out.println("Если спортсмен будет терять по "+secondGoal+" грамм в день, то уйдет "+secondDays+" дней!");
-        System.out.println("В среднем спортсмену потребуется "+middleDays+" дней!");
+        float needWeightKg=7;
+        float needWeightGramm=needWeightKg*1000;
+        float numberDaysFirstGoal=needWeightGramm/firstGoal;
+        float numberDaysSecondGoal=needWeightGramm/secondGoal;
+        float numberDaysAverageGoal=(numberDaysFirstGoal+numberDaysSecondGoal)/2;
+        System.out.println("Если спортсмен будет терять по "+firstGoal+" грамм в день, то уйдет "+numberDaysFirstGoal+" дней!");
+        System.out.println("Если спортсмен будет терять по "+secondGoal+" грамм в день, то уйдет "+numberDaysSecondGoal+" дней!");
+        System.out.println("В среднем спортсмену потребуется "+numberDaysAverageGoal+" дней!");
 
         System.out.println("Пятое задание");
         float salaryMarya=67760f;
@@ -61,18 +62,12 @@ public class HomeWork1_2 {
         float newSalaryMarya=salaryMarya+(achieve*salaryMarya);
         float newSalaryDenis=salaryDenis+achieve*salaryDenis;
         float newSalaryKris=salaryKris+achieve*salaryKris;
-        float salaryYearMarya=salaryMarya*12;
-        float newSalaryYearMarya=newSalaryMarya*12;
-        float salaryYearDenis=salaryDenis*12;
-        float newSalaryYearDenis=newSalaryDenis*12;
-        float salaryYearKris=salaryKris*12;
-        float newSalaryYearKris=newSalaryKris*12;
-        float differMarya=newSalaryYearMarya%salaryYearMarya;
-        float differDenis=newSalaryYearDenis%salaryYearDenis;
-        float differKris=newSalaryYearKris%salaryYearKris;
-        System.out.println("Маша теперь получает "+newSalaryMarya+" рублей. Годовой доход вырос на "+differMarya+" рублей.");
-        System.out.println("Маша теперь получает "+newSalaryDenis+" рублей. Годовой доход вырос на "+differDenis+" рублей.");
-        System.out.println("Маша теперь получает "+newSalaryKris+" рублей. Годовой доход вырос на "+differKris+" рублей.");
+        float differMaryaYear=(newSalaryMarya%salaryMarya)*12;
+        float differDenisYear=(newSalaryDenis%salaryDenis)*12;
+        float differKrisYear=(newSalaryKris%salaryKris)*12;
+        System.out.println("Маша теперь получает "+newSalaryMarya+" рублей. Годовой доход вырос на "+differMaryaYear+" рублей.");
+        System.out.println("Маша теперь получает "+newSalaryDenis+" рублей. Годовой доход вырос на "+differDenisYear+" рублей.");
+        System.out.println("Маша теперь получает "+newSalaryKris+" рублей. Годовой доход вырос на "+differKrisYear+" рублей.");
 
         System.out.println("Шестое задание");
         int a=12;
@@ -81,7 +76,7 @@ public class HomeWork1_2 {
         int d=15;
         int e=9;
         int result=a*(b+(c-d*e));
-        int revertResult=result*(-1);
+        int revertResult=-result;
         System.out.println(result);
         System.out.println(revertResult);
 
