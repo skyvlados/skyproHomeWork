@@ -1,6 +1,6 @@
 package pro.sky.java.course1.lesson1_4;
 
-public class HomeWork {
+public class Homework4Cycles {
     public static void main(String[] args) {
         task1();
         task2();
@@ -10,22 +10,21 @@ public class HomeWork {
 
     private static void task1() {
         System.out.println("Первое задание");
-        int i=1;
+        int i = 1;
         while (i<=10){
             System.out.print(i+" ");
             i++;
         }
-        System.out.println("");
+        System.out.println();
         for(int j=10;j>=1;j--){
             System.out.print(j+" ");
         }
     }
     private static void task2() {
-        System.out.println("");
+        System.out.println();
         System.out.println("Второе задание");
-        int i=4;
-        for(;i<=31;i=i+7){
-            System.out.println("Сегодня пятница "+i+"-ое число. Необходимо подготовить отчет.");
+        for (int i = 4; i <= 31; i += 7) {
+            System.out.println("Сегодня пятница " + i + "-ое число. Необходимо подготовить отчет.");
         }
         }
     private static void task3() {
@@ -41,23 +40,17 @@ public class HomeWork {
     }
     private static void task4() {
         System.out.println("Четвертое задание");
-        int i=1;
-        while(i<=30){
-            String message;
-            if(i%5==0&&i%3==0){
-                message="ping pong";
+        for (int i = 1; i <= 30; i++) {
+            System.out.print(i + ": ");
+            if (i % 5 == 0 && i % 3 == 0) {
+                System.out.println("ping pong");
+            } else if (i % 5 == 0) {
+                System.out.println("pong");
+            } else if (i % 3 == 0) {
+                System.out.println("ping");
+            } else {
+                System.out.println();
             }
-            else if(i%5==0){
-                message="pong";
-            }
-            else if(i%3==0){
-                message="ping";
-            }
-            else{
-                message="";
-            }
-            System.out.println(i+": "+message);
-            i++;
         }
     }
 }
