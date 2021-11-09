@@ -24,7 +24,7 @@ public class Homework5Arrays {
     }
 
     private static void task1(int[] arr) {
-        System.out.println("Первое задание");
+        System.out.println("Первое задание:");
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
             sum+=arr[i];
@@ -33,7 +33,7 @@ public class Homework5Arrays {
     }
 
     private static void task2(int[] arr) {
-        System.out.println("Второе задание");
+        System.out.println("Второе задание:");
         int maxValue = arr[0];
         int minValue = arr[0];
         for (int i = 0; i < arr.length; i++) {
@@ -48,7 +48,7 @@ public class Homework5Arrays {
     }
 
     private static void task3(int[] arr) {
-        System.out.println("Третее задание");
+        System.out.println("Третее задание:");
         float sum = 0;
         for (int i = 0; i < arr.length; i++) {
             sum+=arr[i];
@@ -58,7 +58,7 @@ public class Homework5Arrays {
     }
 
     private static void task4() {
-        System.out.println("Четвертое задание");
+        System.out.println("Четвертое задание:");
         char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         for (int i = reverseFullName.length-1; i >= 0; i--) {
             System.out.print(reverseFullName[i]);
