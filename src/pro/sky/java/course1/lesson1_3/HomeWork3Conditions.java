@@ -1,6 +1,6 @@
 package pro.sky.java.course1.lesson1_3;
 
-public class HomeWork1_3 {
+public class HomeWork3Conditions {
     public static void main(String[] args) {
 
         task1();
@@ -13,33 +13,26 @@ public class HomeWork1_3 {
     private static void task1() {
         System.out.println("Первое задание");
         int clientOS=1;
-        if(clientOS==0){
+        if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        }
-        else if(clientOS==1){
+        } else {
             System.out.println("Установите версию приложения для Android по ссылке");
-        }
-        else{
-            System.out.println("Установите в clientOS 0 - если у вас iOS или 1 - если у вас Android");
         }
     }
     private static void task2(){
         System.out.println("Второе задание");
         int clientOS=1;
         int clientDeviceYear=2018;
-        if(clientOS==1){
-            if(clientDeviceYear<2019){
+        if (clientOS == 1) {
+            if (clientDeviceYear < 2019) {
                 System.out.println("Установите lite-версию приложения для Android по ссылке");
-            }
-            else{
+            } else {
                 System.out.println("Установите версию приложения для Android по ссылке");
             }
-        }
-        else{
-            if(clientDeviceYear<2019){
+        } else {
+            if (clientDeviceYear < 2019) {
                 System.out.println("Установите lite-версию приложения для iOS по ссылке");
-            }
-            else{
+            } else {
                 System.out.println("Установите версию приложения для iOS по ссылке");
             }
         }
@@ -47,30 +40,28 @@ public class HomeWork1_3 {
     private static void task3(){
         System.out.println("Третее задание");
         int year=2020;
-        if(year%4!=0||(year%100==0&&year%1000!=0)){
-            System.out.println("Год не является високосным");
-        }
-        else{
+        if (year % 4 == 0 && year % 100 != 0) {
             System.out.println("Этот год високосный");
+        } else {
+            System.out.println("Год не является високосным");
         }
     }
     private static void task4(){
         System.out.println("Четвертое задание");
-        int deliverDistance=59;
-        int timeDistance;
+        int deliverDistance = 59;
+        int timeDistance = 0;
         if(deliverDistance<=20){
-            timeDistance=1;
+            timeDistance += 1;
         }
-        else if(deliverDistance>20&&deliverDistance<60){
-            timeDistance=2;
-        }
-        else{
-            timeDistance=3;
+        else if (deliverDistance > 20 && deliverDistance < 60) {
+            timeDistance += 2;
+        } else {
+            timeDistance += 3;
         }
         System.out.println("На доставку банковской карты потребуется "+timeDistance+" дня");
     }
     private static void task5(){
-        System.out.println("Третее задание");
+        System.out.println("Пятое задание");
         int monthNumber=9;
         switch (monthNumber){
             case 12:
