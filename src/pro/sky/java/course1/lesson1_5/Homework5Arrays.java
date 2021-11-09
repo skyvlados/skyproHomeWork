@@ -1,7 +1,7 @@
 package pro.sky.java.course1.lesson1_5;
 
 import java.util.Arrays;
-
+//
 public class Homework5Arrays {
     public static void main(String[] args) {
         int[] arr = generateRandomArray();
