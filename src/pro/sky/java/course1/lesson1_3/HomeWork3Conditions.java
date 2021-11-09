@@ -11,7 +11,7 @@ public class HomeWork3Conditions {
     }
 
     private static void task1() {
-        System.out.println("Первое задание");
+        System.out.println("Первое задание:");
         int clientOS=1;
         if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
@@ -20,7 +20,7 @@ public class HomeWork3Conditions {
         }
     }
     private static void task2(){
-        System.out.println("Второе задание");
+        System.out.println("Второе задание:");
         int clientOS=1;
         int clientDeviceYear=2018;
         if (clientOS == 1) {
@@ -38,7 +38,7 @@ public class HomeWork3Conditions {
         }
     }
     private static void task3(){
-        System.out.println("Третее задание");
+        System.out.println("Третее задание:");
         int year=2020;
         if (year % 4 == 0 && year % 100 != 0) {
             System.out.println("Этот год високосный");
@@ -47,7 +47,7 @@ public class HomeWork3Conditions {
         }
     }
     private static void task4(){
-        System.out.println("Четвертое задание");
+        System.out.println("Четвертое задание:");
         int deliverDistance = 59;
         int timeDistance = 0;
         if(deliverDistance<=20){
@@ -61,7 +61,7 @@ public class HomeWork3Conditions {
         System.out.println("На доставку банковской карты потребуется "+timeDistance+" дня");
     }
     private static void task5(){
-        System.out.println("Пятое задание");
+        System.out.println("Пятое задание:");
         int monthNumber=9;
         switch (monthNumber){
             case 12:
