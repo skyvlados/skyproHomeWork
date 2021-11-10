@@ -14,13 +14,13 @@ public class Course1Work {
         employees[7] = new Employee("Малевич Казимир Северинович", 3, 800_000);
         employees[8] = new Employee("Богров Данила Сергеевич", 4, 900_000);
         employees[9] = new Employee("Репин Илья Ефимович", 5, 1_000_000);
-        employeesInfo();
-        printResult("Сумма затрат на ЗП в месяц:  ", employeesSumSalary());
-        employeesSumSalary();
-        employeeMinSalary();
-        employeeMaxSalary();
-        employeeAverageSalary();
-        employeesFullName();
+        getEmployeesInfo();
+        printResult("Сумма затрат на ЗП в месяц:  ", getEmployeesTotalSalary());
+        getEmployeesTotalSalary();
+        getEmployeeMinSalary();
+        getEmployeeMaxSalary();
+        getEmployeeAverageSalary();
+        getEmployeesFullName();
 
     }
 
@@ -28,24 +28,24 @@ public class Course1Work {
         System.out.println(text + result);
     }
 
-    public static void employeesInfo() {
+    public static void getEmployeesInfo() {
         for (Employee employee : employees) {
             System.out.println(employee.toString());
         }
     }
 
-    public static double employeesSumSalary() {
+    public static double getEmployeesTotalSalary() {
         double employeesSum = 0;
         for (Employee employee : employees) {
-            employeesSum = employeesSum + employee.getSalary();
+            employeesSum += employee.getSalary();
         }
         return employeesSum;
     }
 
-    public static void employeeMinSalary() {
-        double employeeMin = 1000000000;
+    public static void getEmployeeMinSalary() {
+        double employeeMin = employees[0].getSalary();
         int employeeId = 0;
-        for (int i = 0; i < employees.length; i++) {
+        for (int i = 1; i < employees.length; i++) {
             if (employeeMin > employees[i].getSalary()) {
                 employeeMin = employees[i].getSalary();
                 employeeId = i;
@@ -54,10 +54,10 @@ public class Course1Work {
         System.out.println("Сотрудник с минимальной ЗП: " + employees[employeeId].getName());
     }
 
-    public static void employeeMaxSalary() {
-        double employeeMax = 0;
+    public static void getEmployeeMaxSalary() {
+        double employeeMax = employees[0].getSalary();
         int employeeId = 0;
-        for (int i = 0; i < employees.length; i++) {
+        for (int i = 1; i < employees.length; i++) {
             if (employeeMax < employees[i].getSalary()) {
                 employeeMax = employees[i].getSalary();
                 employeeId = i;
@@ -66,12 +66,12 @@ public class Course1Work {
         System.out.println("Сотрудник с максимальной ЗП: " + employees[employeeId].getName());
     }
 
-    public static void employeeAverageSalary() {
-        double employeeAverage = employeesSumSalary() / employees.length;
+    public static void getEmployeeAverageSalary() {
+        double employeeAverage = getEmployeesTotalSalary() / employees.length;
         System.out.println("Среднее значение Зарплат: " + employeeAverage);
     }
 
-    public static void employeesFullName() {
+    public static void getEmployeesFullName() {
         System.out.println("ФИО всех сотрудников:");
         for (int i = 0; i < employees.length; i++) {
             System.out.println(employees[i].getName());

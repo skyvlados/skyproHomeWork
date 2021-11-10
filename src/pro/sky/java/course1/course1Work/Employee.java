@@ -4,6 +4,7 @@ import java.util.Objects;
 
 public class Employee {
     private static int counter;
+
     private final String name;
     private final int id;
     private int department;
