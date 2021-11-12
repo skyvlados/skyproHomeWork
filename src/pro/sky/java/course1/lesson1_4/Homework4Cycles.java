@@ -42,10 +42,12 @@ public class Homework4Cycles {
         System.out.println("Четвертое задание");
         for (int i = 1; i <= 30; i++) {
             System.out.print(i + ": ");
-            if (i % 5 == 0 && i % 3 == 0) {
-                System.out.println("ping pong");
-            } else if (i % 5 == 0) {
-                System.out.println("pong");
+            if (i % 5 == 0) {
+                if (i % 3 == 0) {
+                    System.out.println("ping pong");
+                } else {
+                    System.out.println("pong");
+                }
             } else if (i % 3 == 0) {
                 System.out.println("ping");
             } else {
