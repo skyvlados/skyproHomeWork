@@ -1,15 +1,15 @@
 package pro.sky.java.course1.lesson1_2;
 
-public class HomeWork1_2 {
+public class HomeWork2Variables {
     public static void main(String[] args) {
         System.out.println("Первое задание");
-        byte littleNumber=1;
+        byte littleNumber = 1;
         System.out.println(littleNumber);
-        short shortNumber=128;
+        short shortNumber = 128;
         System.out.println(shortNumber);
-        int middleNumber=1000;
+        int middleNumber = 1000;
         System.out.println(middleNumber);
-        long longNumber=365L;
+        long longNumber = 365L;
         System.out.println(longNumber);
         float floatNumber= 0.1f;
         System.out.println(floatNumber);
