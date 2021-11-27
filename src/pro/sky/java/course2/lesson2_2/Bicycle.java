@@ -9,7 +9,5 @@ public class Bicycle extends AbstractTransport {
         super(modelName, 2);
     }
 
-    public void updateType() {
-        System.out.println("Меняем покрышку");
-    }
+
 }
